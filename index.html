@@ -40,8 +40,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <p> Graduate Student at Carnegie Mellon University, Pittsburgh, PA </p>
   </div>
   <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
     <a href="https://www.linkedin.com/in/dkedar7/" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+    <a href="resume.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-copy fa-fw w3-margin-right"></i>RESUME</a>
     <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
   </div>
   <div class="w3-panel w3-large">
@@ -74,28 +75,29 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <div class="w3-third w3-container w3-margin-bottom">
         <a href="Time_Series_Analysis.html"><img src="images\timeseriestitle.png" alt="Norway" style="width:100%" class="w3-hover-opacity" ></a>
         <div class="w3-container w3-white">
-          <a href="Time_Series_Analysis.html"><p><b>Prediction of Currency Value</b></p></a>
-          <a href="Time_Series_Analysis.html"><p>Time series analysis of valuation of currency over a period of 180 days. Various statistical concepts are considered in analysis.
-          ARIMA and neural network models are also built.</p></a>
+          <a style="text-decoration:none" href="Time_Series_Analysis.html"><p><b>Prediction of Currency Value</b></p></a>
+          <a style="text-decoration:none" href="Time_Series_Analysis.html"><p>Time series analysis of valuation of currency over a period of 180 days. Various statistical concepts are considered in analysis.
+          <b>ARIMA</b> and <b>neural network</b> models are also built.</p></a>
       </div>
     </div>
 
 
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images\ner_title.jpg" alt="Norway" class="w3-hover-opacity" style="width:412px;height:250px;">
+  <div class="w3-third w3-container w3-margin-bottom"></a>
+      <a style="text-decoration:none" href="Optimal Production Schedule.html"><img src="production/multi-step-lead-form-lead-generation-process-web-forms-300x186.jpg" alt="Norway" class="w3-hover-opacity" style="width:412px;height:250px;">
       <div class="w3-container w3-white">
-        <p><b>Named Entity Recognition</b></p>
-        <p>Identification and extraction of relevant search terms using a custom-built logistic regression model. The model was fine tuned by improving feature selection.
-        AWS EC2 cluster was deployed to handle the heavy computation.</p>
+        <p><b>Data-driven Process Scheduling</b></p>
+        <p>Improve operation of a manufacturing facility using process data to find <b>optimal schedule</b>. Total operation cost decreased by about <b>30%</b>
+        after optimization.</p></a>
       </div>
     </div>
 
 
     <div class="w3-third w3-container">
-      <img src="images\POS_title.png" alt="Norway" style="width:412px;height:250px;" class="w3-hover-opacity">
+      <img src="images\ner_title.jpg" alt="Norway" class="w3-hover-opacity" style="width:412px;height:250px;">
       <div class="w3-container w3-white">
-        <p><b>Part of Speech Tagging</b></p>
-        <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+        <p><b>Named Entity Recognition</b></p>
+        <p>Identification and extraction of relevant search terms using a custom-built logistic regression model. The model was fine tuned by improving feature selection.
+        AWS EC2 cluster was deployed to handle the heavy computation.</p>
       </div>
     </div>
   </div>
@@ -121,10 +123,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 
     <div class="w3-third w3-container">
-      <img src="images\soccer-title.jpg" alt="Norway" style="width:412px;height:250px;" class="w3-hover-opacity">
+      <img src="images\POS_title.png" alt="Norway" style="width:412px;height:250px;" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Soccer Pass Prediction</b></p>
-        <p>Development of a model which predicts which player the ball is passed to in a soccer match when the location of all 22 players on the field is given.</p>
+        <p><b>Part of Speech Tagging</b></p>
+        <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
       </div>
     </div>
   </div>
@@ -133,7 +135,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 <!-- End page content -->
 </div>
-
 <script>
 // Script to open and close sidebar
 function w3_open() {
