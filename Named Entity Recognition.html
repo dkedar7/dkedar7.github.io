@@ -11768,7 +11768,7 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
     <!--  Start fron the line below-->
-        <title>Data-driven Scheduling of a Multi-site Manufacturing Facility</title>
+        <title>Named Entity Recognition</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -11831,7 +11831,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<img src = "http://174.138.108.232/wp-content/uploads/2017/08/entities.png">
+<p>&lt;img src = "<a href="http://174.138.108.232/wp-content/uploads/2017/08/entities.png"&gt;">http://174.138.108.232/wp-content/uploads/2017/08/entities.png"&gt;</a></p>
 
 </div>
 </div>
@@ -11849,9 +11849,9 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><p> <font style="FONT-SIZE:15px; COLOR:#000000; LINE-HEIGHT:25px; FONT-FAMILY:Arial,Helvetica,sans-serif">
-Named Entity Recognition (NER) is the process of extracting relevant terms (or words) from text- sentences, paragraphs, or articles. Typically in NER, one scans through all the words in a text, tagging each with the most relevant tag from a given dictionary of tags. If a person does this manually, it is very difficult to keep track of the number of times a particular tag has been assigned, to remember the portion of the text where a particular tag appears the most number of times, let alone assess similarity of  texts based on the frequency of these tags. For this reason, NER is done on a large scale using pre-trained algorithms. <br> <br>
+Named Entity Recognition (NER) is the process of extracting relevant terms (or words) from text- sentences, paragraphs, or articles. Typically in NER, one scans through all the words in a text, tagging each with the most relevant tag from a given dictionary of tags. If a person does this manually, it is very difficult to keep track of the number of times a particular tag has been assigned or to remember the portion of the text where a particular tag appears the most number of times, let alone assess the similarity of texts based on the frequency of these tags. For this reason, NER is done on a large scale using pre-trained algorithms. <br> <br>
     &emsp;&emsp; For example, consider the foloowing sentence:<br><br>
-<mark>The European Union, with U.S. backing,has threatened to refer Iran to the U.N. Security Council, which could impose sanctions if it finds Tehran has violated the Nuclear Non-Proliferation treaty.</mark> <br><br></p>
+<mark>The European Union, with U.S. backing, has threatened to refer Iran to the U.N. Security Council, which could impose sanctions if it finds Tehran has violated the Nuclear Non-Proliferation treaty.</mark> <br><br></p>
 <p>When this sentence is run through an NER algorithm, the most likely output is the following: <br> <br>
         Organization: <mark>European Union</mark>, <mark>U.N. Security Council</mark><br>
         Geopolitical Entity: <mark>U.S.</mark>, <mark>Iran</mark>,<mark>Tehran</mark> <br>
@@ -11921,8 +11921,8 @@ Basically, the algorithms that power an NER product are classifiers. Classifiers
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><p> <font style="FONT-SIZE:15px; COLOR:#000000; LINE-HEIGHT:25px; FONT-FAMILY:Arial,Helvetica,sans-serif">
-    In this work, a huge dataset of about <b>50,000</b> sentences has been analyzed for making a Named Entity Recognition product. This length is about 10x as much as the length of a mid-size book (<a href="https://www.quora.com/How-many-sentences-are-in-a-mid-length-book">ref</a>). The final aim is to assign tags to each and every word. The dataset has been obtained from <a href="https://www.kaggle.com/abhinavwalia95/entity-annotated-corpus">this</a> Kaggle database. We selectively use the first column, which gives the individual words and the third column, which gives the corresponding tags for our feature engineering experiments.<br><br></p>
-<p>Even though many deep learning models and standard libraries like <a href="https://spacy.io/">Spacy</a> are availabe, we have primarily chosen a  <a href="https://en.wikipedia.org/wiki/Logistic_regression"><b>Logistic Regression</b></a> classifier because our primary intention is to study how a small change in the selection of features affects classification accuracy. All the codes and metric files can be found in <a href="https://github.com/dkedar7/Named_Entity_Recognition">this</a> Github repository. All codes are written in Python using the <a href="http://www.numpy.org/">Numpy</a> module.</p>
+    In this work, a huge dataset of about <b>50,000</b> sentences has been analyzed for making a Named Entity Recognition tool. This length is about 10x as much as the length of a mid-size book (<a href="https://www.quora.com/How-many-sentences-are-in-a-mid-length-book">ref</a>). The final aim is to assign tags to each and every word. The dataset has been obtained from <a href="https://www.kaggle.com/abhinavwalia95/entity-annotated-corpus">this</a> Kaggle database. We selectively use the first column, which gives the individual words and the third column, which gives the corresponding tags for our feature engineering experiments.<br><br></p>
+<p>Even though many deep learning models and standard libraries like <a href="https://spacy.io/">Spacy</a> are availabe, we have primarily chosen a  <a href="https://en.wikipedia.org/wiki/Logistic_regression"><b>Logistic Regression</b></a> classifier because our basic intention is to study how a small change in the selection of features affects classification accuracy. All the codes and metric files can be found in <a href="https://github.com/dkedar7/Extracting-Information-From-Text">this</a> Github repository. All codes are written in Python using the <a href="http://www.numpy.org/">Numpy</a> module.</p>
 
 </div>
 </div>
@@ -12184,7 +12184,8 @@ $\begin{pmatrix}word \hspace{0.1cm} 1\\ word\hspace{0.1cm}2\\ word\hspace{0.1cm}
     <td>85194</td>
   </tr>
 
-</table><p>Weighted average F1-score = <b>0.90987</b></p>
+</table><p>Weighted average F1-score = <b>0.90987</b><br>
+Weighted average F1-score (without o-tag) = <b>0.60380</b></p>
 <hr style="height:4px;border:none;color:#333;background-color:#333;" />
 </div>
 </div>
@@ -12388,8 +12389,18 @@ word\hspace{0.1cm}N-1 \hspace{0.3cm}word\hspace{0.1cm}N\hspace{0.3cm}EOS\\\end{p
     <td>85134</td>
   </tr>
 
-</table><p>Weighted Average F1 score = <b>0.94240</b></p>
+</table><p>Weighted Average F1 score = <b>0.94240</b><br>
+Weighted Average F1 score (without considering o-tag) = <b>0.75401</b></p>
 <hr style="height:4px;border:none;color:#333;background-color:#333;" />
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There is almost 0.15 improvement over model 1 when model 2 is used.</p>
+
 </div>
 </div>
 </div>
