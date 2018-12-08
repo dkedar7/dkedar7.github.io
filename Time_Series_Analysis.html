@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11730,14 +11730,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11767,6 +11767,54 @@ div#notebook {
     });
     </script>
     <!-- End of mathjax configuration --></head>
+    <!--  Start fron the line below-->
+        <title>Named Entity Recognition</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+        </style>
+          </head>
+        <!-- End of mathjax configuration --></head>
+      <body class="w3-light-grey w3-content" style="max-width:1600px">
+
+        <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+          <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+              <i class="fa fa-remove"></i>
+            </a>
+            <a href="index.html">
+            <img src="images/me.jpg" style="width:45%;" class="w3-round"><br><br>
+          </a>
+
+          <a href="index.html">
+            <h4><b>Kedar Dabhadkar</b></h4>
+            </a>
+            <p> Graduate Student at Carnegie Mellon University, Pittsburgh, PA </p>
+          </div>
+          <div class="w3-bar-block">
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+            <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+            <a href="resume.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-copy fa-fw w3-margin-right"></i>RESUME</a>
+            <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+          </div>
+          <div class="w3-panel w3-large">
+            <a href="https://github.com/dkedar7" class="fa fa-github w3-hover-opacity"></a>
+            <a href="https://twitter.com/kedard7" class="fa fa-twitter w3-hover-opacity"></a>
+            <a href="https://www.linkedin.com/in/dkedar7/" class="fa fa-linkedin w3-hover-opacity"></a>
+          </div>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left:300px">
+    <!--  Stop after the line above-->
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -20502,11 +20550,11 @@ The RNN is adjusted to suit as per requirement.</p>
         <span class="n">target</span> <span class="o">=</span> <span class="n">t_list</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">size</span><span class="p">]</span>
         <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">add_list</span><span class="p">]),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
         <span class="n">Y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
-        
+
     <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Y</span><span class="p">)</span>
-    
-    <span class="k">return</span> <span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="o">.</span><span class="n">T</span>       
+
+    <span class="k">return</span> <span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 
 </div>
@@ -24110,7 +24158,7 @@ AxVTIiIiIjFQMSUiIiISAxVTIiIiIjFQMSUiIiISg/8HqoxGMPrGwpMAAAAASUVORK5CYII=
   </div>
 </body>
 
- 
+
 
 
 </html>
