@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121793279-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121793279-1');
+</script>
+
+<title>Kedar's Work</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+
+
+<meta property='og:image' content="https://github.com/dkedar7/dkedar7.github.io/blob/master/images/header.jpg?raw=true"/>
+
+  </head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="images/me.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Projects</b></h1>
+
+    </div>
+    </div>
+  </header>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+        <a href="Time_Series_Analysis.html"><img src="icons\tsa.png" alt="Norway" style="width:250px;height:250px;" class="w3-hover-opacity ">
+        <div class="w3-container w3-white">
+          <a style="text-decoration:none" href="Time_Series_Analysis.html"><p><b>Prediction of Currency Value</b></p></a>
+          <a style="text-decoration:none" href="Time_Series_Analysis.html"><p>Time series analysis of valuation of currency over a period of 180 days. Various statistical concepts are considered in analysis.
+          <b>ARIMA</b> and <b>neural network</b> models are also built.</p></a>
+      </div>
+    </div>
+
+
+  <div class="w3-third w3-container w3-margin-bottom"></a>
+    <!-- <a href="Time_Series_Analysis.html"><img src="images\timeseriestitle.png" alt="Norway" style="width:100%" class="w3-hover-opacity" ></a> -->
+    <a style="text-decoration:none" href="EEG.html"><img src="icons\eeg.png" alt="Norway" style="width:250px;height:250px;" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Automatic Detection of a Specific Pattern in Electroencephalogram (EEG)</b></p>
+      <p>Train a classifier to predict the
+occurrence of <b>Cyclic Alternating Pattern (CAP)</b>, associated
+with sleep disorders, in the <b>electroencephalogram (EEG)</b>. </p></a>
+
+      </div>
+    </div>
+
+
+    <div class="w3-third w3-container">
+      <a style="text-decoration:none" href = "Named Entity Recognition.html"><img src="icons\ner.png" alt="Norway" style="width:250px;height:250px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Named Entity Recognition</b></p>
+        <p><b>Identification</b> and <b>extraction</b> of relevant search terms using a custom-built <b>logistic regression</b> model. The model was fine tuned by improving feature selection.
+        <b>AWS EC2</b> cluster was deployed to handle the heavy computation.</p></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <a style="text-decoration:none" href = "cancer_study.html"><div class="w3-third w3-container w3-margin-bottom">
+      <img src="icons\cancer_informatics.png" alt="Norway" style="width:250px;height:250px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Analysis of ELectronic Medical Records of Cancer Patients Using Natural Language Processing</b></p>
+        <p>Slides of <b>third prize</b> winning solution at <b>NAACCR hackathon</b> (June 9-11, 2018) held at UPMC Hillman Cancer Center, Pittsburgh, PA.</p></a>
+      </div>
+    </div>
+
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a style="text-decoration:none" href="Optimal Production Schedule.html"><img src="icons/schedule.png" alt="Norway" class="w3-hover-opacity" style="width:250px;height:250px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Data-driven Process Scheduling</b></p>
+        <p>Improve operation of a manufacturing facility using process data to find <b>optimal schedule</b>. Total operation cost decreased by about <b>30%</b>
+        after optimization.</p></a>
+      </div>
+    </div>
+
+
+    <div class="w3-third w3-container">
+      <a style="text-decoration:none" href="https://github.com/dkedar7/911-Calls-Montgomery-County/blob/master/Clustering.ipynb">
+      <img src="icons\911.png" alt="Norway" style="width:250px;height:250px;" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Ideal Locations of Fire and Rescue Stations in Montgomery County, MD</b></p>
+        <p>Analysis of <b>over 300,000</b> 911 calls over <b>3 years</b> in Montgomery county, MD. Exploratory analysis and <b>clustering</b> to find best
+        locations for the fire and rescue stations.</p></a>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
